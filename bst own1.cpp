@@ -28,11 +28,11 @@ class BST{
 	
 	void inorder(node *temp){
 		if(temp==NULL){
-			return 0;
+			return ;
 		}
 		else{
 			inorder(temp->left);
-			cout<<temp->data<<"->";
+			cout<<temp->data<<" ";
 			inorder(temp->right);
 		}
 		}
