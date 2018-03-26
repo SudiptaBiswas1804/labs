@@ -31,9 +31,9 @@ class BST{
 			return 0;
 		}
 		else{
-			inorder(t->left);
-			cout<<t->data<<"->";
-			inorder(t->right);
+			inorder(temp->left);
+			cout<<temp->data<<"->";
+			inorder(temp->right);
 		}
 		}
 		
@@ -42,7 +42,7 @@ class BST{
 			root=NULL;
 		}
 		
-		void insert(root){
+		void insert(int x){
 			root=insert(x,root);
 		}
 		
