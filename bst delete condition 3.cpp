@@ -137,27 +137,9 @@ class BST
      		}
      		delete temp1;
      		}
-     		else if(temp1->left==NULL || temp1->right==NULL){
-     			if(temp1->parent->left==temp1){
-     			if(temp1->left!=NULL){
-     			temp1->parent->left=temp1->left;
-     			temp1->left->parent=temp1->parent;
-     			}
-     			else if(temp1->right!=NULL){
-     			temp1->parent->left=temp1->right;
-     			temp1->right->parent=temp1->parent;
-     			}
-     		}
-     		else if(temp1->parent->right==temp1){
-     			if(temp1->left!=NULL){
-     				temp1->parent->left=temp1->left;
-     				temp1->left->parent=temp1->parent;
-     			}
-     			else if(temp1->right!=NULL){
+     		else if(temp1->right!=NULL){
      				temp1->parent->right=temp1->right;
      				temp1->right->parent=temp1->parent;
-     			}
-     		}
      		delete temp1;
      		}
      	}
@@ -216,4 +198,3 @@ int main()
     cout<<ti->data;
     cout<<endl;
 }
-
