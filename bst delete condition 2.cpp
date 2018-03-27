@@ -91,7 +91,7 @@ class BST
      			temp->parent->right=NULL;
      		}
      		}
-     	if(temp->left== NULL || temp->right == NULL){
+     	else if(temp->left== NULL || temp->right == NULL){
      		if(temp->parent->left==temp){
      			if(temp->left!=NULL){
      			temp->parent->left=temp->left;
