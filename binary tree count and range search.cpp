@@ -56,7 +56,6 @@ class BST{
                 
        }
        
-       //int
        void rangesearch(node* temp, int s1, int s2){
        	
        	if(temp==NULL){
@@ -73,6 +72,23 @@ class BST{
        	}
        }
        
+            int rcountnode(node *temp, int s1, int s2){
+                if(temp==NULL){
+                        return n;
+                }
+                if(s1<temp->data){
+                        rcountnode(temp->left,s1,s2);
+                }
+                if(s2>temp->data){
+                        rcountnode(temp->right,s1,s2);
+		}
+                if(s1<=temp->data && s2>=temp->data){
+                	
+                }
+       	  }
+                return n;
+                
+       }
    
 		public:
 		BST(){
@@ -94,9 +110,7 @@ class BST{
                 }
                 
                void rsearch(int s1,int s2){
-               	//int q=
                	rangesearch(root,s1,s2);
-               	//return q;
                } 
 
 };
